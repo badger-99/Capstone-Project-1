@@ -3,3 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  --primaryColor: #d3d3d3;
+  --lightSecondaryColor: #272a31;
+  --darkSecondaryColor: #222;
+  --accentColor: #ec5242;
+  --white: #fff;
+}
