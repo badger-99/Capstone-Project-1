@@ -1,5 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  --primaryColor: #d3d3d3;
+  --secondaryColor: #272a31;
+  --accentColor: #ec5242;
 }
