@@ -12,3 +12,23 @@ html {
   --white: #fff;
   font-family: 'Lato', sans-serif;
 }
+
+.desktop {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 768px){
+  .mobile {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+  }
+
+  .desktop {
+    visibility: visible;
+    position: static;
+  }
+}
