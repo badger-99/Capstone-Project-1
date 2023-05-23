@@ -10,6 +10,7 @@ html {
   --darkSecondaryColor: #222;
   --accentColor: #ec5242;
   --white: #fff;
+
   font-family: 'Lato', sans-serif;
 }
 
@@ -20,7 +21,7 @@ html {
   left: 0;
 }
 
-p{
+p {
   line-height: 1.5rem;
 }
 
@@ -48,13 +49,11 @@ p{
 }
 
 #event-header > h4 {
-  font: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
 }
 
 #event-header > h1 {
-  font: "Lato", sans-serif;
   font-weight: 900;
   font-size: 2.1rem;
 }
@@ -66,7 +65,6 @@ p{
 }
 
 #event-description > p {
-  font: "Lato", sans-serif;
   font-weight: 400;
   color: var(--lightSecondaryColor);
   margin: 0 auto;
@@ -77,7 +75,7 @@ p{
   font-weight: 700;
 }
 
-.body-section{
+.body-section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -89,7 +87,6 @@ p{
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  font: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
 }
@@ -100,29 +97,80 @@ hr {
   margin: 0 auto;
 }
 
-#event-cards{
+#about-logo {
+  border-bottom: 0.2rem solid #d3d3d3;
+}
+
+.logo-display > img {
+  width: 100%;
+  height: auto;
+  max-width: 30rem;
+}
+
+#event-cards {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-#partners >  div >h4 {
+.tint {
+  background-color: rgb(236, 82, 66, 70%);
+  color: var(--primaryColor);
+  height: 12.5rem;
+  padding: 4rem 1rem;
+}
+
+#iceland {
+  background: url(./assets/iceland.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#tanzania {
+  background-image: url(./assets/tanzania.jpg);
+  background-size: cover;
+}
+
+#event-cards > img {
+  width: 100%;
+  height: auto;
+  max-width: 33.688rem;
+}
+
+#partners > div > h4 {
   color: var(--primaryColor);
   text-align: center;
 }
 
-#partners{
+#partners {
   background: var(--lightSecondaryColor);
   padding: 1rem;
 }
 
-.footer{
+#mobile-partner-logos {
   display: flex;
   flex-direction: row;
-  font: "Lato", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#mobile-partner-logos > img {
+  max-width: 5.625rem;
+  filter: grayscale(100%);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-content: center;
   font-weight: 400;
   font-size: 0.8rem;
+  padding: 2rem 2rem 1rem 0.5rem;
 }
 
 @media screen and (min-width: 768px) {

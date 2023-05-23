@@ -43,13 +43,11 @@ html {
 }
 
 #hero-header > h4 {
-  font: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
 }
 
 #hero-header > h1 {
-  font: "Lato", sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
 }
@@ -61,13 +59,11 @@ html {
 }
 
 #hero-description > p {
-  font: "Lato", sans-serif;
   font-weight: 400;
   color: var(--lightSecondaryColor);
 }
 
 #hero-details {
-  font: "Lato", sans-serif;
   color: var(--lightSecondaryColor);
   text-align: center;
   margin-bottom: 5rem;
@@ -96,7 +92,6 @@ html {
   flex-direction: column;
   gap: 0.75rem;
   text-align: center;
-  font: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
 }
@@ -120,7 +115,6 @@ hr {
   align-items: center;
   gap: 1rem;
   padding: 1rem 0.5rem;
-  font: "Lato", sans-serif;
   font-weight: 400;
   color: var(--primaryColor);
 }
@@ -132,7 +126,6 @@ hr {
 }
 
 #join-program {
-  font: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   width: fit-content;
@@ -177,7 +170,6 @@ hr {
 }
 
 .name {
-  font: "Lato", sans-serif;
   font-weight: 900;
   color: var(--lightSecondaryColor);
   font-size: 1rem;
@@ -185,7 +177,6 @@ hr {
 }
 
 .qualifications {
-  font: "Lato", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   font-style: italic;
@@ -194,7 +185,6 @@ hr {
 }
 
 .bio {
-  font: "Lato", sans-serif;
   font-size: 0.7rem;
   font-weight: 400;
   color: var(--lightSecondaryColor);
