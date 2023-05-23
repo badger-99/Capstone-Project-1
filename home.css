@@ -20,68 +20,133 @@ html {
   left: 0;
 }
 
-#mobile-header{
+#mobile-header {
   width: 100%;
   margin: 1rem 0 1rem 2rem;
   float: left;
   background-color: transparent;
 }
 
-#mobile-menu{
+#mobile-menu {
   width: 1.25rem;
 }
 
-#hero{
+#hero {
   background: url(./assets/mobile_intro_bg.png);
   padding: 4.688rem 2rem 1rem 2rem;
 }
 
-#hero-header{
+#hero-header {
   color: var(--accentColor);
   margin-bottom: 1rem;
 }
 
-#hero-header > h4{
+#hero-header > h4 {
   font: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
 }
 
-#hero-header > h1{
+#hero-header > h1 {
   font: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
 }
 
-#hero-description{
+#hero-description {
   border: 0.2rem solid white;
   padding: 1rem 0 1rem 1rem;
   margin-bottom: 1rem;
 }
 
-#hero-description > p{
+#hero-description > p {
   font: 'Lato', sans-serif;
   font-weight: 400;
   color: var(--lightSecondaryColor);
 }
 
-#hero-details{
-  
+#hero-details {
   font: 'Lato', sans-serif;
   color: var(--lightSecondaryColor);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
-#hero-details > h2{
+#hero-details > h2 {
   font-weight: 900;
 }
 
-#hero-details > p{
+#hero-details > p {
   font-weight: 400;
 }
 
-@media screen and (min-width: 768px){
+#main-program {
+  padding: 3rem 1rem;
+  color: var(--primaryColor);
+  background-image: url(./assets/pattern_bg.png);
+  background-color: var(--lightSecondaryColor);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#program-heading{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+#program-heading > h4 {
+  font: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+hr{
+  color: var(--accentColor);
+  width: 9%;
+  margin: 0 auto;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.program-card {
+  background: #d3d3d320;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
+  font: 'Lato', sans-serif;
+  font-weight: 400;
+  color: var(--primaryColor);
+}
+
+.program-name {
+  text-align: left;
+  color: var(--accentColor);
+  margin-right: auto;
+}
+
+#join-program{
+  font: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+  color: var(--primaryColor);
+  background-color: var(--accentColor);
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.1rem;
+}
+
+@media screen and (min-width: 768px) {
   .mobile {
     visibility: hidden;
     position: absolute;
