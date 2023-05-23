@@ -100,6 +100,16 @@ hr {
   margin: 0 auto;
 }
 
+#about-logo{
+  border-bottom: 0.2rem solid #d3d3d3;
+}
+
+.logo-display > img {
+  width: 100%;
+  height: auto;
+  max-width: 30rem;
+}
+
 #event-cards{
   display: flex;
   flex-direction: column;
