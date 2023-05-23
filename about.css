@@ -49,13 +49,11 @@ p {
 }
 
 #event-header > h4 {
-  font: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
 }
 
 #event-header > h1 {
-  font: "Lato", sans-serif;
   font-weight: 900;
   font-size: 2.1rem;
 }
@@ -67,7 +65,6 @@ p {
 }
 
 #event-description > p {
-  font: "Lato", sans-serif;
   font-weight: 400;
   color: var(--lightSecondaryColor);
   margin: 0 auto;
@@ -90,7 +87,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  font: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
 }
@@ -117,22 +113,20 @@ hr {
   gap: 1rem;
 }
 
-
-.tint{
+.tint {
   background-color: rgb(236, 82, 66, 70%);
   color: var(--primaryColor);
   height: 12.5rem;
   padding: 4rem 1rem;
 }
 
-#iceland{
+#iceland {
   background: url(./assets/iceland.jpg);
   background-size: cover;
   background-position: center;
-  
 }
 
-#tanzania{
+#tanzania {
   background-image: url(./assets/tanzania.jpg);
   background-size: cover;
 }
@@ -172,7 +166,6 @@ hr {
 .footer {
   display: flex;
   flex-direction: row;
-  font: "Lato", sans-serif;
   justify-content: space-between;
   align-content: center;
   font-weight: 400;
