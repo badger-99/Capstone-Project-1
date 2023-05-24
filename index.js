@@ -8,7 +8,6 @@ const home = document.createElement('a');
 home.href = './home.html';
 home.innerHTML = 'Home';
 home.classList.add('nav-style');
-// home.style.color = '#d3d3d3';
 const about = document.getElementById('nav-link-1').cloneNode(true);
 about.classList.add('nav-style');
 const program = document.getElementById('nav-link-2').cloneNode(true);
@@ -58,3 +57,50 @@ btn.addEventListener('click', (event) => {
     mobileMenu.classList.remove('visible');
   });
 });
+
+// ************************* Dynamically Loading Features Speakers ************************* //
+
+const speakers = [
+  {
+    name:'Yochai Benkler',
+    qualifications:'Harvard Law School Professor',
+    bio:'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006.',
+    mobileImg:'./assets/YochaiMobile.png',
+    desktopImg:'./assets/Yochai.png',
+  },
+  {
+    name:'SohYeong Noh',
+    qualifications:'Director of Art Center Nabi, CC Korea Director',
+    bio:'>Nabi is the main venue for media art production in Korea and promotes cross-disciplinary collaboration.',
+    mobileImg:'./assets/SohYeongMobile.png',
+    desktopImg:'./assets/SohYeong.png',
+  },
+  {
+    name:'Lila Tretiov',
+    qualifications:'Exscutive Director at the Wikimedia Foundation',
+    bio:'Lola Trettkov is the Executive Director of the Wikimedia Foundation, the non-profit organization that operates Wikipedia.',
+    mobileImg:'./assets/LilaMobile.png',
+    desktopImg:'./assets/Lila.png',
+  },
+  {
+    name:'Kilnam Chon',
+    qualifications:'Korea Advanced Institute of Science and Technology (KAIST) Emeritus Professor',
+    bio:'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital commons.',
+    mobileImg:'./assets/KilnamMobile.png',
+    desktopImg:'./assets/Kilnam.png',
+  },
+  {
+    name:'Julia Leda',
+    qualifications:'President of Young Pirates of Europe',
+    bio:'European integration, political democracy and participation of youth through online as her major condem.',
+    mobileImg:'./assets/JuliaMobile.png',
+    desktopImg:'./assets/Julia.png',
+  },
+  {
+    name:'Ryan Merkley',
+    qualifications:'CEO of Creative Commons, ex COO of the mozilla Foundation',
+    bio:'Ryan had been leading open-source projects at the Mozilla Foundation such as the open source movement.',
+    mobileImg:'./assets/RyanMobile.png',
+    desktopImg:'./assets/Ryan.png',
+  }
+]
