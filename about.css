@@ -52,7 +52,7 @@ a {
   flex-direction: column;
   justify-items: center;
   gap: 2rem;
-  max-width: 1440px;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
@@ -330,9 +330,14 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
+    align-content: end;
     font-weight: 700;
     font-size: 1rem;
     padding: 4rem 5rem 2rem;
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
   }
 }

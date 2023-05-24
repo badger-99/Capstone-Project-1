@@ -68,6 +68,7 @@ a {
 
 #hero-description > p {
   font-weight: 400;
+  font-size: 1rem;
   color: var(--lightSecondaryColor);
 }
 
@@ -83,6 +84,7 @@ a {
 
 #hero-details > p {
   font-weight: 400;
+  font-size: 1rem;
 }
 
 #main-program {
@@ -162,7 +164,7 @@ hr {
 
 .speaker-card {
   display: grid;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 2fr 4fr;
   align-items: center;
   gap: 0.8rem;
 }
@@ -176,6 +178,10 @@ hr {
   width: 100%;
   height: auto;
   margin: 0;
+}
+
+.speaker-details {
+  max-width: 21.563rem;
 }
 
 .name {
@@ -194,7 +200,7 @@ hr {
 }
 
 .bio {
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--lightSecondaryColor);
 }
@@ -370,8 +376,8 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-weight: 400;
-    font-size: 0.8rem;
+    font-weight: 700;
+    font-size: 1rem;
     padding: 2rem 2rem 1rem 0.5rem;
     background: var(--primaryColor);
   }
