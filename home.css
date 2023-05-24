@@ -205,6 +205,10 @@ hr {
   color: var(--lightSecondaryColor);
 }
 
+.hidden {
+  display: none;
+}
+
 /****************** Mobile Pop-up Menu ******************/
 .pop {
   margin: 1rem 2rem 1rem 0;
