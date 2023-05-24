@@ -4,10 +4,10 @@ const img = document.querySelector('#mobile-menu img');
 const mobileMenu = document.createElement('div');
 const menuList = document.createElement('div');
 const mobileHeader = document.querySelector('.no-pop');
-const home = document.createElement('a')
-home.href = './home.html'
-home.innerHTML = 'Home'
-home.classList.add('nav-style')
+const home = document.createElement('a');
+home.href = './home.html';
+home.innerHTML = 'Home';
+home.classList.add('nav-style');
 // home.style.color = '#d3d3d3';
 const about = document.getElementById('nav-link-1').cloneNode(true);
 about.classList.add('nav-style');
@@ -21,7 +21,7 @@ const news = document.getElementById('nav-link-5').cloneNode(true);
 news.classList.add('nav-style');
 const campaign = document.getElementById('special-link').cloneNode(true);
 campaign.classList.add('special-nav-style');
-menuList.appendChild(home)
+menuList.appendChild(home);
 menuList.appendChild(about);
 menuList.appendChild(program);
 menuList.appendChild(join);

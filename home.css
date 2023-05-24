@@ -206,13 +206,13 @@ hr {
   background-color: transparent;
 }
 
-#popup-mobile-menu{
+#popup-mobile-menu {
   background-color: var(--lightSecondaryColor);
   z-index: 3;
   height: 100vh;
 }
 
-#mobile-menu-list{
+#mobile-menu-list {
   padding: 4rem 2rem;
   margin-right: 6rem;
   display: flex;
@@ -221,14 +221,14 @@ hr {
   color: #ec5242;
 }
 
-.nav-style{
+.nav-style {
   color: var(--primaryColor);
   font-size: 1.5rem;
   border-bottom: 0.2rem solid #ec5242;
   padding-bottom: 0.75rem;
 }
 
-.special-nav-style{
+.special-nav-style {
   font-size: 1.5rem;
   color: var(--primaryColor);
   border: 1rem solid #ec5242;
