@@ -47,7 +47,7 @@ a {
   text-align: center;
 }
 
-.flex{
+.flex {
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -78,13 +78,18 @@ a {
   margin-bottom: 1rem;
 }
 
+.tint > p {
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
 #event-description > p {
   font-weight: 400;
   color: var(--lightSecondaryColor);
   margin: 0 auto;
 }
 
-#contact-details{
+#contact-details {
   padding-bottom: 2rem;
 }
 
@@ -142,7 +147,7 @@ hr {
   place-items: center;
 }
 
-.tint > h2, .tint > p{
+.tint > h2 {
   font-weight: 900;
   font-size: 1.25rem;
 }
@@ -258,7 +263,7 @@ hr {
     padding: 0.5rem;
   }
 
-  .flex{
+  .flex {
     gap: 5rem;
   }
 
@@ -268,29 +273,29 @@ hr {
     gap: 1rem;
     justify-content: center;
   }
-  
-  #event-cards > div, .tint {
+
+  #event-cards > div,
+  .tint {
     width: 100%;
     height: 20rem;
     max-width: 35rem;
-}
+  }
 
-.tint > h2, .tint > p{
-  font-weight: 900;
-  font-size: 1.5rem;
-}
+  .tint > h2,
+  .tint > p {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
 
-  .footer{
+  .footer {
     background: #272a31;
     color: var(--primaryColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 4rem 5rem 2rem;
   }
-  .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 4rem 5rem 2rem;
-}
 }
