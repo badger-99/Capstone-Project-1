@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-#mobile-header {
+.no-pop {
   margin: 1rem 0 1rem 2rem;
   float: left;
   background-color: transparent;
@@ -157,6 +157,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin: 0 auto;
 }
 
 .speaker-card {
@@ -196,6 +197,43 @@ hr {
   font-size: 0.7rem;
   font-weight: 400;
   color: var(--lightSecondaryColor);
+}
+
+/****************** Mobile Pop-up Menu ******************/
+.pop {
+  margin: 1rem 2rem 1rem 0;
+  float: right;
+  background-color: transparent;
+}
+
+#popup-mobile-menu{
+  background-color: var(--lightSecondaryColor);
+  z-index: 3;
+  height: 100vh;
+}
+
+#mobile-menu-list{
+  padding: 4rem 2rem;
+  margin-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: #ec5242;
+}
+
+.nav-style{
+  color: var(--primaryColor);
+  font-size: 1.5rem;
+  border-bottom: 0.2rem solid #ec5242;
+  padding-bottom: 0.75rem;
+}
+
+.special-nav-style{
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+  border: 1rem solid #ec5242;
+  background: var(--accentColor);
+  width: fit-content;
 }
 
 @media screen and (min-width: 768px) {
