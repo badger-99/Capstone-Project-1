@@ -135,7 +135,7 @@ speakerDiv.innerHTML = speakerGrid;
 const speakerLine = document.getElementsByClassName('speaker-card');
 const speakerArray = Array.from(speakerLine);
 
-//lading on a desktop to show all speakers
+// lading on a desktop to show all speakers
 if (window.innerWidth > 767) {
   speakerArray.forEach((speaker) => {
     if (speaker.classList.contains('hidden')) {
@@ -154,9 +154,8 @@ trigger.addEventListener('change', ({ matches }) => {
         speaker.classList.remove('hidden');
       }
     });
-  }
-  // if screen changes to mobile, show only forst two speakers by default
-  else {
+  } else {
+    // if screen changes to mobile, show only forst two speakers by default
     speakerArray.forEach((speaker, index) => {
       if (index > 1) {
         speaker.classList.add('hidden');

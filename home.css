@@ -205,7 +205,7 @@ hr {
   color: var(--lightSecondaryColor);
 }
 
-#speaker-btn{
+#speaker-btn {
   border: 0.1rem solid #272a31;
   background: inherit;
   padding: 0.5rem;
@@ -214,7 +214,7 @@ hr {
   color: var(--lightSecondaryColor);
 }
 
-#speaker-btn > img{
+#speaker-btn > img {
   margin-left: 0.2rem;
 }
 
