@@ -237,7 +237,7 @@ hr {
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1.25rem;
   }
 
   .regular-link:hover {
