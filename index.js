@@ -59,7 +59,7 @@ btn.addEventListener('click', (event) => {
 });
 
 // ************************* Dynamically Loading Features Speakers ************************* //
-
+// Speaker object array
 const speakers = [
   {
     name:'Yochai Benkler',
@@ -103,4 +103,23 @@ const speakers = [
     mobileImg:'./assets/RyanMobile.png',
     desktopImg:'./assets/Ryan.png',
   }
-]
+];
+
+ // Speaker card template
+  const card = (speaker) => `
+  <div class="speaker-card">
+            <div class="speaker-img">
+              <img class="mobile" src="${speaker.mobileImg}" alt="Yochai-img">
+              <img class="desktop" src="${speaker.desktopImg}" alt="Yochai-img">
+            </div>
+            <div class="speaker-details">
+              <h5 class="name">${speaker.name}</h5>
+              <p class="qualifications">${speaker.qualifications}</p>
+              <p class="bio">${speaker.bio}</p>
+            </div>
+          </div>
+  `;
+
+const speakerDiv = document.getElementById('speakers')
+const speakerGrid = speakers.map((speaker) => card(speaker)).join('');
+speakerDiv.innerHTML = speakerGrid;
