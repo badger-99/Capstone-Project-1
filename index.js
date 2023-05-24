@@ -67,6 +67,7 @@ const speakers = [
     bio: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006.',
     mobileImg: './assets/YochaiMobile.png',
     desktopImg: './assets/Yochai.png',
+    status: '',
   },
   {
     name: 'SohYeong Noh',
@@ -74,6 +75,7 @@ const speakers = [
     bio: '>Nabi is the main venue for media art production in Korea and promotes cross-disciplinary collaboration.',
     mobileImg: './assets/SohYeongMobile.png',
     desktopImg: './assets/SohYeong.png',
+    status: '',
   },
   {
     name: 'Lila Tretiov',
@@ -81,13 +83,16 @@ const speakers = [
     bio: 'Lola Trettkov is the Executive Director of the Wikimedia Foundation, the non-profit organization that operates Wikipedia.',
     mobileImg: './assets/LilaMobile.png',
     desktopImg: './assets/Lila.png',
+    status: 'hidden',
   },
   {
     name: 'Kilnam Chon',
-    qualifications: 'Korea Advanced Institute of Science and Technology (KAIST) Emeritus Professor',
+    qualifications:
+      'Korea Advanced Institute of Science and Technology (KAIST) Emeritus Professor',
     bio: 'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital commons.',
     mobileImg: './assets/KilnamMobile.png',
     desktopImg: './assets/Kilnam.png',
+    status: 'hidden',
   },
   {
     name: 'Julia Leda',
@@ -95,6 +100,7 @@ const speakers = [
     bio: 'European integration, political democracy and participation of youth through online as her major condem.',
     mobileImg: './assets/JuliaMobile.png',
     desktopImg: './assets/Julia.png',
+    status: 'hidden',
   },
   {
     name: 'Ryan Merkley',
@@ -102,12 +108,13 @@ const speakers = [
     bio: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open source movement.',
     mobileImg: './assets/RyanMobile.png',
     desktopImg: './assets/Ryan.png',
+    status: 'hidden',
   },
 ];
 
 // Speaker card template
 const card = (speaker) => `
-  <div class="speaker-card">
+  <div class="speaker-card ${speaker.status}">
             <div class="speaker-img">
               <img class="mobile" src="${speaker.mobileImg}" alt="Yochai-img">
               <img class="desktop" src="${speaker.desktopImg}" alt="Yochai-img">
@@ -123,3 +130,62 @@ const card = (speaker) => `
 const speakerDiv = document.getElementById('speakers');
 const speakerGrid = speakers.map((speaker) => card(speaker)).join('');
 speakerDiv.innerHTML = speakerGrid;
+
+// ************************* Show more/less button ************************* //
+const speakerLine = document.getElementsByClassName('speaker-card');
+const speakerArray = Array.from(speakerLine);
+
+// lading on a desktop to show all speakers
+if (window.innerWidth > 767) {
+  speakerArray.forEach((speaker) => {
+    if (speaker.classList.contains('hidden')) {
+      speaker.classList.remove('hidden');
+    }
+  });
+}
+
+// Using JS media-querry to sscreen size breakpoint changes
+const trigger = matchMedia('(min-width: 768px)');
+trigger.addEventListener('change', ({ matches }) => {
+  // If screen changs to desktop, show all speakers
+  if (matches === true) {
+    speakerArray.forEach((speaker) => {
+      if (speaker.classList.contains('hidden')) {
+        speaker.classList.remove('hidden');
+      }
+    });
+  } else {
+    // if screen changes to mobile, show only forst two speakers by default
+    speakerArray.forEach((speaker, index) => {
+      if (index > 1) {
+        speaker.classList.add('hidden');
+      }
+    });
+  }
+});
+
+// Event listener for the button to show or hide speakers in mobile view
+
+const speakerBtn = document.getElementById('speaker-btn');
+let expanded = speakerBtn.getAttribute('expanded');
+speakerBtn.addEventListener('click', () => {
+  if (expanded === 'false') {
+    speakerArray.forEach((speaker) => {
+      if (speaker.classList.contains('hidden')) {
+        speaker.classList.remove('hidden');
+      }
+    });
+    speakerBtn.innerHTML = 'Show Less <img src="./assets/arrow_up.png" alt="">';
+    expanded = 'true';
+    speakerBtn.setAttribute('expanded', expanded);
+  } else {
+    speakerArray.forEach((speaker, index) => {
+      if (index > 1) {
+        speaker.classList.add('hidden');
+      }
+    });
+    speakerBtn.innerHTML = 'Show More <img src="./assets/arrow_down.png" alt="">';
+    expanded = 'false';
+    speakerBtn.setAttribute('expanded', expanded);
+  }
+});
