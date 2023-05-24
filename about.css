@@ -34,6 +34,7 @@ a {
   margin: 1rem 0 1rem 2rem;
   float: left;
   background-color: transparent;
+  width: 50%;
 }
 
 #mobile-menu {
@@ -44,6 +45,15 @@ a {
   background: url(./assets/mobile_intro_bg.png);
   padding: 4.688rem 2rem 1rem 2rem;
   text-align: center;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 #event-header {
@@ -74,9 +84,14 @@ a {
   margin: 0 auto;
 }
 
+#contact-details{
+  padding-bottom: 2rem;
+}
+
 #contact-details > p > a {
   color: #272a31;
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .body-section {
@@ -121,18 +136,27 @@ hr {
   background-color: rgb(236, 82, 66, 70%);
   color: var(--primaryColor);
   height: 12.5rem;
-  padding: 4rem 1rem;
+  padding: 2rem;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.tint > h2, .tint > p{
+  font-weight: 900;
+  font-size: 1.25rem;
 }
 
 #iceland {
   background: url(./assets/iceland.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
 #tanzania {
   background-image: url(./assets/tanzania.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 #event-cards > img {
@@ -234,11 +258,27 @@ hr {
     padding: 0.5rem;
   }
 
+  .flex{
+    gap: 5rem;
+  }
+
   #event-cards {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    justify-content: center;
   }
+  
+  #event-cards > div, .tint {
+    width: 100%;
+    height: 20rem;
+    max-width: 35rem;
+}
+
+.tint > h2, .tint > p{
+  font-weight: 900;
+  font-size: 1.5rem;
+}
 
   .footer{
     background: #272a31;
@@ -249,8 +289,8 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  font-weight: 400;
-  font-size: 0.8rem;
-  padding: 2rem 2rem 1rem 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 4rem 5rem 2rem;
 }
 }
