@@ -21,8 +21,17 @@ html {
   left: 0;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
+a {
+  color: var(--lightSecondaryColor);
+  text-decoration: none;
+}
+
 #mobile-header {
-  width: 100%;
+  /* width: 100%; */
   margin: 1rem 0 1rem 2rem;
   float: left;
   background-color: transparent;
@@ -195,10 +204,138 @@ hr {
     visibility: hidden;
     position: absolute;
     left: 0;
+    top: 0;
   }
 
   .desktop {
     visibility: visible;
     position: static;
+  }
+
+  #top-bar {
+    background: var(--lightSecondaryColor);
+    padding: 0.5rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+
+  #top-bar > a {
+    color: var(--primaryColor);
+  }
+
+  #nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 4rem;
+  }
+
+  #nav-links > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+
+  .regular-link:hover {
+    color: var(--accentColor);
+  }
+
+  #special-link {
+    color: var(--accentColor);
+    font-weight: 700;
+    border: 0.25rem solid #ec5242;
+    padding: 0.5rem;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    padding: 4.688rem 15rem 1rem 5rem;
+    height: 45rem;
+    gap: 0.5rem;
+  }
+
+  .max-width {
+    max-width: 62.5rem;
+  }
+
+  #hero-description > p {
+    text-align: left;
+  }
+
+  #hero-details {
+    text-align: left;
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .program-card {
+    background: #d3d3d320;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    justify-items: center;
+    gap: 0;
+  }
+
+  .program-name {
+    color: var(--accentColor);
+    margin-right: 0;
+  }
+
+  .program-description {
+    text-align: center;
+  }
+
+  #speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  #partners > div > h4 {
+    color: var(--primaryColor);
+    text-align: center;
+  }
+
+  #partners {
+    background: var(--lightSecondaryColor);
+    padding: 1rem;
+  }
+
+  #partner-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  #partner-logos > img {
+    max-width: 5.625rem;
+    filter: grayscale(100%);
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 2rem 2rem 1rem 0.5rem;
+    background: var(--primaryColor);
   }
 }
