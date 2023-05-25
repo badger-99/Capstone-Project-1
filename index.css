@@ -42,6 +42,12 @@ a {
 
 #hero {
   background: url(./assets/mobile_intro_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero-content {
   padding: 4.688rem 2rem 1rem 2rem;
 }
 
@@ -61,7 +67,8 @@ a {
 }
 
 #hero-description {
-  border: 0.2rem solid white;
+  border: 0.25rem solid white;
+  background-color: #f7f7f8;
   padding: 1rem 0 1rem 1rem;
   margin-bottom: 1rem;
 }
@@ -80,6 +87,7 @@ a {
 
 #hero-details > h2 {
   font-weight: 900;
+  letter-spacing: 0.125rem;
 }
 
 #hero-details > p {
@@ -110,6 +118,7 @@ hr {
   color: var(--accentColor);
   width: 9%;
   margin: 0 auto;
+  border: 1px solid;
 }
 
 #cards {
@@ -290,7 +299,7 @@ hr {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0.25rem 4rem;
+    padding: 0.25rem 6rem;
   }
 
   #nav-links > ul {
@@ -312,48 +321,107 @@ hr {
   }
 
   #hero {
+    background: url(./assets/main_big.png);
+    background-size: contain;
+  }
+
+  #hero-content {
     display: flex;
     flex-direction: column;
     align-items: first baseline;
-    padding: 4.688rem 15rem 1rem 5rem;
-    height: 45rem;
-    gap: 0.5rem;
+    padding-top: 8rem;
+    max-width: 68.75rem;
+    width: 98%;
+    margin: 0 auto;
+    gap: 0;
   }
 
-  .max-width {
-    max-width: 62.5rem;
+  .section-heading > h4 {
+    font-size: 2rem;
+  }
+
+  #hero-header > h4 {
+    font-size: 2rem;
+  }
+
+  #hero-header > h1 {
+    font-size: 5rem;
+  }
+
+  #hero-description {
+    padding: 0.625rem 1.563rem 0;
+    margin: 0.938rem 0 2.5rem;
   }
 
   #hero-description > p {
-    text-align: left;
+    text-align: justify;
+    width: 39.438rem;
+    height: 5.625rem;
+    line-height: 2rem;
+    font-size: 1.125rem;
   }
 
   #hero-details {
     text-align: left;
   }
 
+  #hero-details > h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.625rem;
+  }
+
+  #hero-details > p {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    width: 4%;
+  }
+
   #cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10rem;
+  }
+
+  .program-icon {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .program-name {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-right: 0;
   }
 
   .program-card {
     background: #d3d3d320;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 3fr;
-    justify-items: center;
+    display: inline;
+    row-gap: 0;
     gap: 0;
+    width: 20%;
   }
 
-  .program-name {
-    color: var(--accentColor);
-    margin-right: 0;
+  .program-card:hover {
+    border: 0.1rem solid #d3d3d3;
   }
 
   .program-description {
     text-align: center;
+  }
+
+  #program-link {
+    color: var(--primaryColor);
+    margin: 0 auto;
+    text-decoration: underline;
+  }
+
+  #program-link:hover {
+    color: var(--accentColor);
   }
 
   #speakers {
