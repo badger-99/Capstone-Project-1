@@ -417,6 +417,16 @@ hr {
     text-align: center;
   }
 
+  #program-link{
+    color: var(--primaryColor);
+    margin: 0 auto;
+    text-decoration: underline;
+  }
+
+  #program-link:hover{
+    color: var(--accentColor);
+  }
+
   #speakers {
     display: grid;
     grid-template-columns: 1fr 1fr;
