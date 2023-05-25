@@ -5,7 +5,7 @@ const mobileMenu = document.createElement('div');
 const menuList = document.createElement('div');
 const mobileHeader = document.querySelector('.no-pop');
 const home = document.createElement('a');
-home.href = './home.html';
+home.href = './index.html';
 home.innerHTML = 'Home';
 home.classList.add('nav-style');
 const about = document.getElementById('nav-link-1').cloneNode(true);
