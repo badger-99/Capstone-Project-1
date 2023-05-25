@@ -47,7 +47,7 @@ a {
   background-size: cover;
 }
 
-#hero-content{
+#hero-content {
   padding: 4.688rem 2rem 1rem 2rem;
 }
 
@@ -319,10 +319,11 @@ hr {
     padding: 0.5rem;
   }
 
-  #hero{
+  #hero {
     background: url(./assets/main_big.png);
     background-size: contain;
   }
+
   #hero-content {
     display: flex;
     flex-direction: column;
@@ -331,8 +332,11 @@ hr {
     max-width: 68.75rem;
     width: 98%;
     margin: 0 auto;
-    /* height: 45rem; */
     gap: 0;
+  }
+
+  .section-heading > h4 {
+    font-size: 2rem;
   }
 
   #hero-header > h4 {
@@ -343,7 +347,7 @@ hr {
     font-size: 5rem;
   }
 
-  #hero-description{
+  #hero-description {
     padding: 0.625rem 1.563rem 0;
     margin: 0.938rem 0 2.5rem;
   }
@@ -369,9 +373,6 @@ hr {
     font-size: 1.5rem;
   }
 
-  .section-heading > h4 {
-    font-size: 2rem;
-  }
 
   hr {
     width: 4%;

@@ -48,7 +48,7 @@ a {
   text-align: center;
 }
 
-#abt{
+#abt {
   padding: 3.75rem 2rem 1rem 2rem;
   margin: 0 auto;
   max-width: 68.75rem;
@@ -97,7 +97,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-items: center;
-
 }
 
 .body-section {
@@ -126,7 +125,7 @@ hr {
   border-bottom: 0.2rem solid #d3d3d3;
 }
 
-#lgo{
+#lgo {
   gap: 2rem;
   max-width: 75rem;
   margin: 0 auto;
@@ -307,58 +306,66 @@ hr {
     padding: 0.5rem;
   }
 
-  p{
+  p {
     line-height: 1.75rem;
     font-size: 1.125rem;
   }
-  #abt{
-  max-width: 65rem;
-}
 
-  hr{
+  #abt {
+    max-width: 65rem;
+  }
+
+  hr {
     width: 3%;
   }
-  #event-header{
+
+  #event-header {
     margin-bottom: 2rem;
   }
 
   #event-header > h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 
-#event-description{
-  margin-bottom: 4rem;
-}
+  #event-description {
+    margin-bottom: 4rem;
+  }
 
-#contact-details{
-  margin-bottom: 3rem;
-}
+  #contact-details {
+    margin-bottom: 3rem;
+  }
 
-#lgo{
-  margin-bottom: 1.5rem;
-}
+  #lgo {
+    margin-bottom: 1.5rem;
+  }
 
-.section-title > h4{
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
+  .section-title > h4 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
 
-#lgo > .section-description{
-  margin-bottom: 2rem;
-}
+  #lgo > .section-description {
+    margin-bottom: 2rem;
+  }
 
-#lgo > .section-description > P {
-  max-width: 50rem;
-}
+  #lgo > .section-description > p {
+    max-width: 50rem;
+  }
 
-#past-events{
-  margin-bottom: 5rem;
-}
+  #past-events {
+    margin-bottom: 5rem;
+  }
 
-#past-events > .section-description > p{
-  margin-bottom: 2rem;
-}
+  .tint > h2,
+  .tint > p {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  #past-events > .section-description > p {
+    margin-bottom: 2rem;
+  }
 
   #event-cards {
     display: flex;
@@ -372,12 +379,6 @@ hr {
     width: 100%;
     height: 20rem;
     max-width: 35rem;
-  }
-
-  .tint > h2,
-  .tint > p {
-    font-weight: 900;
-    font-size: 1.5rem;
   }
 
   .footer {
