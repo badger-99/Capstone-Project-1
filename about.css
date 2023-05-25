@@ -34,7 +34,6 @@ a {
   margin: 1rem 0 1rem 2rem;
   float: left;
   background-color: transparent;
-  width: 50%;
 }
 
 #hamburger-menu {
@@ -43,17 +42,16 @@ a {
 
 #about-event {
   background: url(./assets/mobile_intro_bg.png);
-  padding: 4.688rem 2rem 1rem 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  gap: 2rem;
-  max-width: 75rem;
+#abt{
+  padding: 3.75rem 2rem 1rem 2rem;
   margin: 0 auto;
+  max-width: 68.75rem;
 }
 
 #event-header {
@@ -62,20 +60,15 @@ a {
   text-align: center;
 }
 
-#event-header > h4 {
-  font-weight: 400;
-  font-size: 1.25rem;
-}
-
 #event-header > h1 {
   font-weight: 900;
-  font-size: 2.1rem;
+  font-size: 2.5rem;
 }
 
 #event-description {
   background: var(--white);
-  padding: 1rem 0 1rem 1rem;
-  margin-bottom: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 2.063rem;
 }
 
 .tint > p {
@@ -85,6 +78,7 @@ a {
 
 #event-description > p {
   font-weight: 400;
+  font-size: 1rem;
   color: var(--lightSecondaryColor);
   margin: 0 auto;
 }
@@ -97,6 +91,13 @@ a {
   color: #272a31;
   font-weight: 700;
   text-decoration: underline;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
 }
 
 .body-section {
@@ -123,6 +124,12 @@ hr {
 
 #about-logo {
   border-bottom: 0.2rem solid #d3d3d3;
+}
+
+#lgo{
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 .logo-display > img {
@@ -300,14 +307,63 @@ hr {
     padding: 0.5rem;
   }
 
-  .flex {
-    gap: 5rem;
+  p{
+    line-height: 1.75rem;
+    font-size: 1.125rem;
   }
+  #abt{
+  max-width: 65rem;
+}
+
+  hr{
+    width: 3%;
+  }
+  #event-header{
+    margin-bottom: 2rem;
+  }
+
+  #event-header > h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#event-description{
+  margin-bottom: 4rem;
+}
+
+#contact-details{
+  margin-bottom: 3rem;
+}
+
+#lgo{
+  margin-bottom: 1.5rem;
+}
+
+.section-title > h4{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#lgo > .section-description{
+  margin-bottom: 2rem;
+}
+
+#lgo > .section-description > P {
+  max-width: 50rem;
+}
+
+#past-events{
+  margin-bottom: 5rem;
+}
+
+#past-events > .section-description > p{
+  margin-bottom: 2rem;
+}
 
   #event-cards {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
   }
 
