@@ -345,6 +345,12 @@ hr {
     margin-bottom: 0.5rem;
   }
 
+  .tint > h2,
+  .tint > p {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
   #lgo > .section-description {
     margin-bottom: 2rem;
   }
@@ -355,12 +361,6 @@ hr {
 
   #past-events {
     margin-bottom: 5rem;
-  }
-
-  .tint > h2,
-  .tint > p {
-    font-weight: 900;
-    font-size: 1.5rem;
   }
 
   #past-events > .section-description > p {
