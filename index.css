@@ -118,6 +118,7 @@ hr {
   color: var(--accentColor);
   width: 9%;
   margin: 0 auto;
+  border: 1px solid;
 }
 
 #cards {
